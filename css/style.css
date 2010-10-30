@@ -233,6 +233,7 @@ button {  width: auto; overflow: visible; }
 .siteheader h1{
 	font-size:3em;
 	font-family: "museo-slab-1","museo-slab-2",serif;
+	margin-top: 20px;
 }
 
 /*this is a hack - not sure why it needs to be there*/
@@ -294,15 +295,99 @@ body h2{
 	padding-top: 2px;
 }
 div #download{
-	background-color: #e6f5ff;
 	border: 1px solid #cedbe3;
 	height: 160px;
+	background: url(/images/corner-free.png) no-repeat right top;
+	background-color: #e6f5ff;
+
+}
+#download h2{
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+#download p{
+	font-size: .8em;
+	color: #bbb;
+	margin-top: 0;	
+}
+#download button{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+/* thoughtbot (inspired by thoughtbot.com)
+*******************************************************************************/
+button.download {
+  background: #296ECF;
+  background: -moz-linear-gradient(0% 100% 90deg, #1B4B9A 0%, #286BCB 50%, #286BCB 50%, #4E93CD 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #4E93CD), color-stop(0.5, #286BCB), color-stop(0.5, #286BCB), color-stop(1, #1B4B9A));
+  border: 1px solid #26547D;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  color: #fefefe;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 12px 0 14px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
+  width: 245px;
+}
+
+button.download:hover {
+  background: #3975C2;
+  background: -moz-linear-gradient(0% 100% 90deg, #1B4B9A 0%, #286BCB 50%, #286BCB 50%, #81A3D8 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #81A3D8), color-stop(0.5, #286BCB), color-stop(0.5, #286BCB), color-stop(1, #1B4B9A));
+}
+
+button.download:active {
+  background: #b30300;
+  background: -moz-linear-gradient(0% 100% 90deg, #1B4B9A 0%, #286BCB 50%, #286BCB 50%, #1B4B9A 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #1B4B9A), color-stop(0.5, #286BCB), color-stop(0.5, #286BCB), color-stop(1, #1B4B9A));
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+}
+
+#examples h2{
+	font-size: 1.3em;
+	color: #8c939a;
+}
+#examples ul{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 8px 0 0;
 }
 div #who-made-this{
-	background-color: yellow;
+	border: 1px solid #cedbe3;
+	height: 30px;
+	padding: 10px;
+	background-color: #f7f7f7;
+	margin-bottom: 10px;
+}
+.block{
+	display: inline-block;
+	float: left;
+}
+#who-made-this div.userpic.block img {
+	float: left;
+	display: inline;
 }
 #who-made-this h2{
-	float: left;
+	margin-right: 20px
+	
+}
+div.userpic.block {
+		width: 400px;
+}
+div.userpic.block img{
+	padding-right: 10px;
+	margin-top: 3px;
 }
 div #info_2{
 	background-color: green;
